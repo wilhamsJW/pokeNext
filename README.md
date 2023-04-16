@@ -7,4 +7,6 @@ Here we will find a project with Next.js
 
 ### Installed dependencies
 
-<img src="../project../publics/iamges/dependencies-instaled.png"></img>
+<p align="center">
+  <img src="../project../publics/iamges/dependencies-instaled.png" width="600px">
+ </p>
