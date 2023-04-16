@@ -9,4 +9,4 @@ Here we will find a project with Next.js
 
 <p align="center">
   <img src="project/public/dependencies-instaled.png" width="600px">
- </p>
+</p>
