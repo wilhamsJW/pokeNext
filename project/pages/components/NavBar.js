@@ -6,11 +6,11 @@ import styles from '../../styles/Navbar.module.css'
 export default function NavBar() {
     return (
         <nav className={styles.navbar}>
-            <div>
-                <Image src="/images/pokebola.png"  width="30" height="30" alt="PokeNext" />
+            <div className={styles.logo}>
+                <Image src="/images/pokebola.jpg"  width="30" height="30" alt="PokeNext" />
                 <h1>PokeNext</h1>
             </div>
-            <ul>
+            <ul className={styles.link_items}>
                 <li>
                     <Link href="/">Home</Link>
                 </li>
