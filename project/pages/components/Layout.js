@@ -11,7 +11,9 @@ export default function Layout({ children }) {
         <title>PokeNext.JS</title>
       </Head>
       <NavBar />
-      <main>{children}</main> {/** renderiza o que está dentro do index.tsx */}
+      <main>{children}</main> 
+      {/** renderiza o que está dentro do index.tsx */}
+      {/** este comnponente Layout recebe este chidren que exibimos na linha acima dentro do arquivo _app.tsx */}
       <Footer />
     </>
   );
