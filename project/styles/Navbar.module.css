@@ -36,6 +36,7 @@
     border-bottom: 2px solid transparent;
 }
 
+/** border inicia trasnparent depois q passo o mouse com hover ela aparece lentamente */
 .link_items a:hover {
     border-bottom: 2px solid #fff;
     font-size: 1.01em;
