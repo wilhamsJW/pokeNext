@@ -1,5 +1,8 @@
 import styles from '../styles/Home.module.css'
+
 import Image from 'next/image'
+
+import Card from './components/card'
 
 interface Pokemon {
   id: number;
@@ -51,7 +54,7 @@ export default function Home({ pokemons }: { pokemons: Pokemon[] }) {
       {/** Como estamos usando JSX, no map não colocamos uma função com {} e sim com parenteses */}
       <div className={styles.pokemon_container}>
         {pokemons.map(pokemon => (
-          <p key={pokemon.id}>{pokemon.name}</p>
+          <Card key={pokemon.id} pokemon={pokemon} />
         ))}
       </div>
     </>
