@@ -1,4 +1,5 @@
-import styles from '../styles/Home.modules.css'
+import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 
 interface Pokemon {
   id: number;
@@ -37,15 +38,23 @@ export async function getStaticProps() {
 
 export default function Home({ pokemons }: { pokemons: Pokemon[] }) {
   return (
-    <div>
-      <h1>PokeNext</h1>
+    <>
+      <div className={styles.title_container}>
+        <h1 className={styles.title}>Poke<span>Next</span></h1>
+        <Image 
+          src="/images/pokebola.jpg"
+          width="50" 
+          height="50" 
+          alt="PokeNext"
+         />
+      </div>
       {/** Como estamos usando JSX, no map não colocamos uma função com {} e sim com parenteses */}
-      <ul>
+      <div className={styles.pokemon_container}>
         {pokemons.map(pokemon => (
-          <li key={pokemon.id}>{pokemon.name}</li>
+          <p key={pokemon.id}>{pokemon.name}</p>
         ))}
-      </ul>
-    </div>
+      </div>
+    </>
     
   )
 }
