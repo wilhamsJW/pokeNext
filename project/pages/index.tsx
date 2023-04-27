@@ -10,7 +10,7 @@ interface Pokemon {
   url: string
 }
 
-export async function getStaticProps() {
+export async function getStaticProps() { // Função nativa do Next.js que busca dados vindos de uma API ou banco de dados
 
   // Estamos limitando aqui para apenas trazer 251 dados, para não ficar 
   // algo tão pesado no carregamento do site.
