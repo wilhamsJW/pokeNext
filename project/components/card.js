@@ -19,6 +19,8 @@ export default function Card({pokemon}) {
              <p className={styles.id}>#{pokemon.id}</p>
              <h3 className={styles.title}>{pokemon.name}</h3>
              <Link className={styles.btn} href={`/pokemon/${pokemon.id}`}>Detalhes</Link>
+             {/**<Link href={`/test`}>Teste rota</Link>*/}
+             {/** Explicação no readme sobre este href de rota dinãmica */}
         </div>
     )
 }
