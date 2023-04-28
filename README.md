@@ -3,6 +3,8 @@ Here we will find a project with Next.js
 
 ## [Project Link](https://wilhams-pokenext-5sbfubmmv-wilhamsdev-gmailcom.vercel.app/)
 
+## [See the prject on the site](https://wilhams-pokenext-5sbfubmmv-wilhamsdev-gmailcom.vercel.app/)
+
 ## Commands used in installation
 
 1. npx create-next-app .
