@@ -8,7 +8,7 @@ Here we will find a project with Next.js
 ### Installed dependencies
 
 <p align="center">
-  <img src="project/public/dependencies-instaled.png" width="600px">
+  <img src="public/dependencies-instaled.png" width="600px">
 </p>
 
 #### Observation: https://github.com/wilhamsJW/pokeNext/commit/ca8a5f691c49fa754d3ef41505d574be6d9f47e4
@@ -39,5 +39,5 @@ we add DNS since we are using external server
   3. Irá aparecer esta tela (click em deploy) (Irá ser feito o build, runnig checks e irá no dá um DNS)
 
   <p align="center">
-    <img src="project/public/vercel02.png" width="400px">
+    <img src="public/vercel02.png" width="400px">
   </p>
