@@ -44,8 +44,8 @@ export default function Pokemon({ data }) {
   console.log("data:", data);
 
   return (
-    <div>
-      <h1>{data.name}</h1>
+    <div className={styles.pokemon_container}>
+      <h1 className={styles.title}>{data.name}</h1>
       <Image
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`}
         width="200"
@@ -59,22 +59,30 @@ export default function Pokemon({ data }) {
       </div>
       <div>
         <h3>Tipo:</h3>
-        <div>
+        <div className={styles.types_container}>
           #&nbsp;
           {data.types.map((e, i) => (
-            <span key={i}>&nbsp;{e.type.name}</span>
+            <span
+              key={i}
+              className={`${styles.type} ${styles["type_" + e.type.name]}`}
+            >
+              &nbsp;{e.type.name}
+            </span>
           ))}
         </div>
 
-        <div>
-          <h4>Atura:</h4>
-          <p>{data.height * 10} cm</p>
+        <div className={styles.data_container}>
+          <div className={styles.data_height}>
+            <h4>Atura:</h4>
+            <p>{data.height * 10} cm</p>
+          </div>
+
+          <div className={styles.data_weight}>
+            <h4>Peso:</h4>
+            <p>{data.weight / 10} kg</p>
+          </div>
         </div>
 
-        <div>
-          <h4>Peso:</h4>
-          <p>{data.height / 10} kg</p>
-        </div>
       </div>
     </div> // end
   );
