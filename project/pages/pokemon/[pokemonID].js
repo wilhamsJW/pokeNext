@@ -65,6 +65,8 @@ export default function Pokemon({ data }) {
             <span
               key={i}
               className={`${styles.type} ${styles["type_" + e.type.name]}`}
+              {/** passei duas classes na mesma tag, a primeira sempre vai ser usada e a segunda só vai ser usada se houver o dado q vem da API, a segunda class apenas
+                irá alterar o background-color para q o tipo de cada pokemon fique de acordo com sua respctiva cor */}
             >
               &nbsp;{e.type.name}
             </span>
