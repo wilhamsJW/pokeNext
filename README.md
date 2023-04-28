@@ -24,3 +24,20 @@ we add DNS since we are using external server
 `IMPORTANTE:` No arquivo `card.js` temos essa parte da linha de código:
    ##### href={`/pokemon/${pokemon.id}`}>Detalhes...
    este `/pokemon/${pokemon.id}` se refere a pasta criada dentro de pages chamada `pokemon` que dentro dela colocamos o que foi descrito no passo `2`, dessa forma o `Next.js` já entende que se trata de rotas dinãmicas e irá atuar para que a mágica aconteça
+
+   ### How to Deploy?
+
+   1. npm run build 
+
+   2. Próximo passo é criar uma conta na `vercel` após criar ela, continue com github q fica mais fácil a importação
+   O vercel irá identificar seus projetos e aparecerá nessa tela (click em import):
+
+  <p align="center">
+    <img src="project/public/vercel01.png" width="400px">
+  </p>
+
+  3. Irá aparecer esta tela (click em deploy) (Irá ser feito o build, runnig checks e irá no dá um DNS)
+
+  <p align="center">
+    <img src="project/public/vercel02.png" width="400px">
+  </p>

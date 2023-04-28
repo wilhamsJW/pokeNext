@@ -1,14 +1,15 @@
+import React from 'react';
 import styles from '../styles/Home.module.css'
 
 import Image from 'next/image'
 
 import Card from '../components/card'
 
-interface Pokemon {
-  id: number;
-  name: string;
-  url: string
-}
+// interface Pokemon {
+//   id: number;
+//   name: string;
+//   url: string
+// }
 
 export async function getStaticProps() { // Função nativa do Next.js que busca dados vindos de uma API ou banco de dados
 
@@ -27,7 +28,8 @@ export async function getStaticProps() { // Função nativa do Next.js que busca
   const res = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=251`)
   const data = await res.json()
 
-  data.results.map((item: Pokemon, index: number ) => {
+  //data.results.map((item: Pokemon, index: number ) => {
+  data.results.map((item, index ) => {
     item.id = index + 1 // item.id -> adiciona mais um elemento dentro meu array, este é o ID
   }) 
 
@@ -39,7 +41,8 @@ export async function getStaticProps() { // Função nativa do Next.js que busca
 
 }
 
-export default function Home({ pokemons }: { pokemons: Pokemon[] }) {
+  //export default function Home({ pokemons }: { pokemons: Pokemon[] }) {
+  export default function Home({ pokemons }) {
   return (
     <>
       <div className={styles.title_container}>
