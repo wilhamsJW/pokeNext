@@ -33,7 +33,7 @@ we add DNS since we are using external server
    O vercel irá identificar seus projetos e aparecerá nessa tela (click em import):
 
   <p align="center">
-    <img src="project/public/vercel01.png" width="400px">
+    <img src="public/vercel01.png" width="400px">
   </p>
 
   3. Irá aparecer esta tela (click em deploy) (Irá ser feito o build, runnig checks e irá no dá um DNS)
